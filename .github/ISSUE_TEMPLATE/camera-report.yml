@@ -1,1 +1,50 @@
-
+name: 📑 Báo cáo Camera
+description: Mẫu báo cáo tình trạng camera hằng ngày
+title: "[Báo cáo] Camera - {{ date }}"
+labels: ["report", "camera"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Báo cáo tình trạng Camera
+ 
+  - type: input
+    id: datetime
+    attributes:
+      label: Ngày giờ báo cáo
+      description: Nhập ngày giờ báo cáo
+      placeholder: dd/mm/yyyy hh:mm
+ 
+  - type: input
+    id: camera_name
+    attributes:
+      label: Tên camera
+      description: Nhập tên camera
+      placeholder: Camera số 1 / Camera khu vực A
+ 
+  - type: dropdown
+    id: status
+    attributes:
+      label: Tình trạng hiện tại
+      options:
+        - Hoạt động bình thường
+        - Mất tín hiệu
+        - Đang bảo trì
+ 
+  - type: input
+    id: lost_time
+    attributes:
+      label: Ngày giờ mất tín hiệu
+      placeholder: dd/mm/yyyy hh:mm
+ 
+  - type: input
+    id: recovered_time
+    attributes:
+      label: Ngày giờ có lại tín hiệu
+      placeholder: dd/mm/yyyy hh:mm
+ 
+  - type: textarea
+    id: notes
+    attributes:
+      label: Ghi chú thêm
+      description: Thêm chi tiết nếu cần
