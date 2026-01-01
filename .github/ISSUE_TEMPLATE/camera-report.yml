@@ -10,7 +10,7 @@ body:
         #  Báo cáo tình trạng Camera
         Vui lòng chọn thông tin chi tiết bên dưới để tạo báo cáo.
  
-  - type: input
+  - type: dropdown
     id: datetime
     attributes:
       label: 🕒 Ngày giờ báo cáo
