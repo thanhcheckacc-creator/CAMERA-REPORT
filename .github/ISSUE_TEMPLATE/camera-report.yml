@@ -33,11 +33,11 @@ body:
   - type: dropdown
     id: status
     attributes:
-      label: ⚡ Tình trạng hiện tại
+      label:  Tình trạng hiện tại
       options:
-        - ✅ Hoạt động bình thường
-        - ❌ Mất tín hiệu
-        - 🛠️ Đang bảo trì
+        -  Hoạt động bình thường
+        -  Mất tín hiệu
+        -  Đang bảo trì
  
   - type: input
     id: lost_time
@@ -53,9 +53,3 @@ body:
       description: Nhập thời gian camera hoạt động trở lại
       placeholder: 01/01/2026 17:30
  
-  - type: textarea
-    id: notes
-    attributes:
-      label: 📝 Ghi chú thêm
-      description: Thêm chi tiết hoặc nhận xét bổ sung
-      placeholder: Ví dụ: Camera bị mất tín hiệu do bảo trì hệ thống
